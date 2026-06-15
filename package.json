@@ -1,0 +1,44 @@
+{
+  "name": "jwtpeek",
+  "version": "0.1.0",
+  "description": "Decode & inspect JWT tokens in your terminal — header, payload, and human-readable expiry. Zero dependencies, fully offline, nothing uploaded.",
+  "bin": {
+    "jwtpeek": "bin/cli.js"
+  },
+  "main": "src/core.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "jwt",
+    "jwt-decode",
+    "json-web-token",
+    "jwt-cli",
+    "token",
+    "decode",
+    "auth",
+    "oauth",
+    "oidc",
+    "cli",
+    "devtools",
+    "debug"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjdoor/jwtpeek.git"
+  },
+  "homepage": "https://github.com/jjdoor/jwtpeek#readme",
+  "bugs": {
+    "url": "https://github.com/jjdoor/jwtpeek/issues"
+  }
+}
