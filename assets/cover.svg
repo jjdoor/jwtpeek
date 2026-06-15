@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="420" fill="url(#bg)"/>
+  <rect width="1000" height="420" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <!-- faint grid -->
+  <g stroke="#21262d" stroke-width="1">
+    <line x1="0" y1="105" x2="1000" y2="105"/>
+    <line x1="0" y1="315" x2="1000" y2="315"/>
+    <line x1="500" y1="0" x2="500" y2="420"/>
+    <line x1="750" y1="0" x2="750" y2="420"/>
+  </g>
+
+  <!-- faint background token -->
+  <text x="60" y="400" fill="#1c2330" font-size="13">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZXhwIjoxNTE2MjQyNjIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</text>
+
+  <!-- terminal dots -->
+  <g>
+    <circle cx="936" cy="34" r="6" fill="#f85149"/>
+    <circle cx="958" cy="34" r="6" fill="#d29922"/>
+    <circle cx="980" cy="34" r="6" fill="#3fb950"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="60" y="116" font-size="64" font-weight="700" letter-spacing="-1">
+    <tspan fill="#58a6ff">jwt</tspan><tspan fill="#3fb950">peek</tspan>
+  </text>
+  <text x="62" y="152" font-size="20" fill="#8b949e">decode a JWT's header, payload &amp; expiry — without a website</text>
+
+  <!-- ENCODED: the iconic 3-color JWT -->
+  <text x="60" y="212" font-size="13" fill="#6e7681" letter-spacing="3">ENCODED</text>
+  <text x="60" y="246" font-size="22" font-weight="600">
+    <tspan fill="#f85149">eyJhbGciOiJIUzI1</tspan><tspan fill="#6e7681">.</tspan><tspan fill="#bc8cff">eyJzdWIiOiIxMjM0</tspan><tspan fill="#6e7681">.</tspan><tspan fill="#58a6ff">SflKxwRJSMeKKF2Q</tspan>
+  </text>
+
+  <!-- decode marker -->
+  <text x="60" y="292" font-size="20" fill="#6e7681">▼ <tspan fill="#3fb950">jwtpeek</tspan></text>
+
+  <!-- DECODED result -->
+  <text x="60" y="332" font-size="19">
+    <tspan fill="#8b949e">{ </tspan><tspan fill="#79c0ff">"sub"</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#a5d6ff">"1234567890"</tspan><tspan fill="#8b949e">, </tspan><tspan fill="#79c0ff">"exp"</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#a5d6ff">1516242622</tspan><tspan fill="#8b949e"> }</tspan>
+  </text>
+
+  <!-- expiry verdict chip -->
+  <g>
+    <rect x="648" y="313" width="208" height="34" rx="7" fill="#3d1418" stroke="#f85149" stroke-width="1.2"/>
+    <text x="668" y="336" font-size="17" fill="#f85149" font-weight="700">● EXPIRED 2d 4h ago</text>
+  </g>
+
+  <!-- install hint -->
+  <text x="60" y="378" font-size="17" fill="#58a6ff">$ npx jwtpeek <tspan fill="#6e7681">·</tspan> pip install jwtpeek</text>
+</svg>
